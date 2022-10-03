@@ -1,0 +1,56 @@
+﻿@model MVC_Razor_EF.Models.Alumnos
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles Del Alumno</h2>
+<center>
+    <div>
+        <span class="baseline"><strong>ID: </strong></span>
+        <span class="top">@Model.id</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Nombre: </strong></span>
+        <span class="top">@Model.nombre</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Apellido Paterno: </strong></span>
+        <span class="top">@Model.primerApellido</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Apellido Materno: </strong></span>
+        <span class="top">@Model.segundoApellido</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Correo: </strong></span>
+        <span class="top">@Model.correo</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Telefono: </strong></span>
+        <span class="top">@Model.telefono</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Fecha Nacimiento: </strong></span>
+        <span class="top">@Model.fechaNacimiento</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Curp: </strong></span>
+        <span class="top">@Model.curp</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Sueldo: </strong></span>
+        <span class="top">@Model.sueldo</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Estado: </strong></span>
+        <span class="top">@Model.idEstadoOrigen</span>
+    </div>
+    <div>
+        <span class="baseline"><strong>Estatus: </strong></span>
+        <span class="top">@Model.idEstatus</span>
+    </div>
+
+    <td>@Html.ActionLink("Ir Al Inicio", "Index", null, htmlAttributes: new { @class = "btn btn-warning" })</td>
+</center>
+
